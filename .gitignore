@@ -1,0 +1,28 @@
+# Configurações locais do Claude Code (não deve ir para o repositório)
+.claude/
+
+# Fotos/vídeos brutos de origem — já convertidos para versões
+# otimizadas (kebab-case, vários tamanhos) que o site realmente usa.
+# Mantidos apenas localmente para não inflar o repositório.
+assets/images/Fetuccine.jpg
+assets/images/Foto Donos.jpg
+assets/images/foto-hero.png
+assets/images/IMG_8395.MOV
+assets/images/manjerição.png
+assets/images/perfil-casa-da-pizza.jpg
+assets/images/pizza (1).jpg
+assets/images/pizza (2).jpg
+assets/images/pizza (3).jpg
+assets/images/Pizza Calabresa com Bacon.jpg
+assets/images/Pizza de Abobrinha.jpg
+assets/images/Pizza de Tilápia.jpg
+assets/images/Pizza do Chef.jpg
+assets/images/PIzza Executiva.jpg
+assets/images/Pizza Kids.jpg
+assets/images/Pizza Mexicana.jpg
+assets/images/Pizza Pepperoni.jpg
+assets/images/vídeo hero pizza.mp4
+
+# Sistema
+.DS_Store
+Thumbs.db

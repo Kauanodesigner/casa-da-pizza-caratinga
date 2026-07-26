@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" role="img" aria-label="Espaço reservado para a fotografia dos proprietários da Casa da Pizza">
+  <rect width="1000" height="750" fill="#0D0D0D"/>
+  <rect x="14" y="14" width="972" height="722" rx="4" fill="none" stroke="#D82016" stroke-opacity=".4" stroke-width="3" stroke-dasharray="16 11"/>
+  <g fill="none" stroke="#D82016" stroke-opacity=".55" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="425" cy="286" r="52"/>
+    <path d="M337 402c0-40 39-66 88-66s88 26 88 66"/>
+    <circle cx="576" cy="304" r="42"/>
+    <path d="M504 402c0-33 32-54 72-54s72 21 72 54"/>
+  </g>
+  <g font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" text-anchor="middle">
+    <text x="500" y="516" font-size="28" font-weight="700" letter-spacing="4" fill="#D82016">FOTO PENDENTE</text>
+    <text x="500" y="556" font-size="22" fill="#8A8A87">Os donos na frente do forno, sem pose de foto oficial.</text>
+    <text x="500" y="588" font-size="22" fill="#8A8A87">Avental sujo de farinha vale mais que camisa passada.</text>
+  </g>
+</svg>

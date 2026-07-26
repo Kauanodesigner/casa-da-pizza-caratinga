@@ -1,0 +1,134 @@
+/* ===================================================================
+   EFEITO PARALLAX PREMIUM · MANJERICÃO
+   style.css — HTML5 + CSS3 puro, sem frameworks.
+   =================================================================== */
+
+/* ============================ RESET BÁSICO ======================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: #f5f5f3;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* as folhas ficam parcialmente fora da tela */
+}
+
+/* ============================ CONTEÚDO DE DEMONSTRAÇÃO =========== */
+
+main {
+  position: relative;
+  z-index: 1; /* fica acima das folhas, que têm z-index: -1 */
+}
+
+.hero,
+.block {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 18vh 24px;
+}
+
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d82016;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 12px;
+}
+
+.lede {
+  margin-top: 20px;
+  max-width: 46ch;
+  color: #b8b8b5;
+  font-size: 1.125rem;
+}
+
+.block {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #b8b8b5;
+}
+
+/* ============================ FOLHAS DE MANJERICÃO ================ */
+
+.leaf {
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+  user-select: none;
+  will-change: transform;
+  transform-origin: center;
+  transition: filter .4s;
+}
+
+/* Camada 1 — foreground: maior, nítida, mais rápida */
+.leaf--1 {
+  width: 320px;
+  top: 8%;
+  left: -60px;
+  opacity: 1;
+  filter: blur(0px);
+}
+
+/* Camada 2 — middle: tamanho médio, leve desfoque */
+.leaf--2 {
+  width: 220px;
+  top: 45%;
+  right: -50px;
+  opacity: .65;
+  filter: blur(5px);
+}
+
+/* Camada 3 — background: menor, mais desfocada, mais lenta */
+.leaf--3 {
+  width: 150px;
+  bottom: 8%;
+  left: 15%;
+  opacity: .35;
+  filter: blur(9px);
+}
+
+/* ============================ RESPONSIVIDADE ====================== */
+
+/* Tablet: todas as folhas a 75% do tamanho original */
+@media (max-width: 1024px) {
+  .leaf--1 { width: 240px; }
+  .leaf--2 { width: 165px; }
+  .leaf--3 { width: 112px; }
+}
+
+/* Mobile: só as folhas 1 e 2; a folha 3 some.
+   O movimento (velocidade/deslocamento) é reduzido pela metade em script.js. */
+@media (max-width: 640px) {
+  .leaf--1 { width: 190px; }
+  .leaf--2 { width: 140px; }
+  .leaf--3 { display: none; }
+}
+
+/* ============================ MOVIMENTO REDUZIDO =================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf {
+    transition: none;
+  }
+}

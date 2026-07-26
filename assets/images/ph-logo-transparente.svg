@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 245" role="img" aria-label="Espaço reservado para o logotipo oficial da Casa da Pizza em fundo transparente">
+  <rect width="700" height="245" fill="#0B0B0B"/>
+  <rect x="10" y="10" width="680" height="225" rx="10" fill="none" stroke="#EF4342" stroke-opacity=".5" stroke-width="3" stroke-dasharray="14 10"/>
+  <g transform="translate(350 96)" fill="none" stroke="#EF4342" stroke-width="6" stroke-linejoin="round">
+    <path d="M0 -46 L38 28 Q0 50 -38 28 Z"/>
+  </g>
+  <g font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" text-anchor="middle">
+    <text x="350" y="182" font-size="24" font-weight="700" letter-spacing="4" fill="#EF4342">LOGOTIPO PENDENTE</text>
+    <text x="350" y="212" font-size="18" fill="#D9DBD7">Arquivo vetorial (SVG ou PNG) com fundo transparente.</text>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Efeito Parallax Premium · Manjericão</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       CAMADAS DE PARALLAX
+       Mesma imagem (assets/manjericao.png) usada 3 vezes, com
+       tamanho, opacidade, blur e velocidade diferentes para criar
+       sensação de profundidade (foreground / middle / background).
+       data-speed  = velocidade do parallax (0 a 1)
+       data-rotate = rotação base da folha, em graus
+       ========================================================== -->
+  <img class="leaf leaf--1" src="assets/manjericao.png" alt="" aria-hidden="true" data-speed="1.0" data-rotate="-18">
+  <img class="leaf leaf--2" src="assets/manjericao.png" alt="" aria-hidden="true" data-speed="0.6" data-rotate="30">
+  <img class="leaf leaf--3" src="assets/manjericao.png" alt="" aria-hidden="true" data-speed="0.3" data-rotate="-35">
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Demo · Parallax</p>
+      <h1>Profundidade em<br>três camadas.</h1>
+      <p class="lede">Role a página para ver as folhas de manjericão se moverem em velocidades diferentes — leve, suave e sem exagero.</p>
+    </section>
+
+    <section class="block">
+      <h2>Camada 1 — Foreground</h2>
+      <p>Maior, nítida e mais rápida. É a que reage mais ao scroll.</p>
+    </section>
+
+    <section class="block">
+      <h2>Camada 2 — Middle</h2>
+      <p>Tamanho médio, levemente desfocada, velocidade intermediária.</p>
+    </section>
+
+    <section class="block">
+      <h2>Camada 3 — Background</h2>
+      <p>Menor, mais desfocada e mais lenta — fica quase no fundo da composição.</p>
+    </section>
+  </main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
