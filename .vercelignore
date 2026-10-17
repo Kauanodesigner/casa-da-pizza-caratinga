@@ -1,0 +1,23 @@
+# Não vai para a Vercel: fotos brutas, documentos internos e configurações locais
+.claude/
+*.md
+assets/images/logo-casa-da-pizza-completo.png
+assets/images/logo-casa-da-pizza-lockup-completo.png
+assets/images/Fetuccine.jpg
+assets/images/Foto Donos.jpg
+assets/images/foto-hero.png
+assets/images/IMG_8395.MOV
+assets/images/manjerição.png
+assets/images/perfil-casa-da-pizza.jpg
+assets/images/pizza (1).jpg
+assets/images/pizza (2).jpg
+assets/images/pizza (3).jpg
+assets/images/Pizza Calabresa com Bacon.jpg
+assets/images/Pizza de Abobrinha.jpg
+assets/images/Pizza de Tilápia.jpg
+assets/images/Pizza do Chef.jpg
+assets/images/PIzza Executiva.jpg
+assets/images/Pizza Kids.jpg
+assets/images/Pizza Mexicana.jpg
+assets/images/Pizza Pepperoni.jpg
+assets/images/vídeo hero pizza.mp4
