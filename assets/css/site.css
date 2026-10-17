@@ -1033,3 +1033,8 @@ em, .title em, .hero__title em { font-style: normal; font-variation-settings: no
 .foot__big { font-size: clamp(2.6rem, 6.4vw, 5.6rem); text-transform: uppercase; letter-spacing: .005em; }
 .timeline li::before { background: var(--red-hi); }
 .data dt, .foot h2 { color: var(--amber); }
+
+/* Categorias da home: 4 blocos (sem bebidas). */
+.cat:nth-child(4) { grid-column: span 2; }
+@media (max-width: 1100px) { .cat:nth-child(4) { grid-column: span 4; } }
+@media (max-width: 640px) { .cat:nth-child(4) { grid-column: span 2; } }

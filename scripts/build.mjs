@@ -250,7 +250,7 @@ const FAQ = [
     { q: "Tem borda recheada?", a: `<p>Tem: ${joinList(MENU.bordas.map((b) => b.nome.toLowerCase()))}. A partir de R$ ${money(Math.min(...MENU.bordas.map((b) => b.p25)))} na pizza de 25 cm e R$ ${money(Math.min(...MENU.bordas.map((b) => b.p35)))} na de 35 cm.</p>` },
     { q: "Quais são as pizzas mais pedidas?", a: `<p>${joinList(salgadas.itens.filter((i) => i.destaque).map((i) => i.nome))}.</p>` },
     { q: "Tem pizza sem carne?", a: `<p>Tem. Entre as salgadas, não levam carne: ${joinList(veg.map((i) => i.nome))}. As ${doces.itens.length} pizzas doces também não levam carne.</p>` },
-    { q: "Além de pizza, o que tem no cardápio?", a: "<p>Massas (fettuccine, espaguete à bolonhesa e espaguete ao alho e óleo com bacon, em porções P, M e G), filé de tilápia, porções de fritas e bebidas: sucos, refrigerantes e água.</p>" }
+    { q: "Além de pizza, o que tem no cardápio?", a: "<p>Massas (fettuccine, espaguete à bolonhesa e espaguete ao alho e óleo com bacon, em porções P, M e G), filé de tilápia e porções de fritas.</p>" }
   ]},
   { group: "Salão, reservas e aniversários", items: [
     { home: true, q: "A Casa da Pizza tem salão para comer no local?", a: `<p>Tem. O salão abre no mesmo horário do delivery: ${HOURS_TEXT}.</p>` },
@@ -283,7 +283,7 @@ function restaurantSchema() {
     foundingDate: SITE.founded,
     founder: SITE.owners.map((name) => ({ "@type": "Person", name })),
     slogan: SITE.slogan,
-    description: `Pizzaria no bairro ${SITE.district}, em ${SITE.city} (${SITE.state}). Pizzas de 25 cm e 35 cm com até dois sabores, massas, porções e bebidas. Delivery, retirada e salão.`,
+    description: `Pizzaria no bairro ${SITE.district}, em ${SITE.city} (${SITE.state}). Pizzas de 25 cm e 35 cm com até dois sabores, massas e porções. Delivery, retirada e salão.`,
     url: abs("/"),
     telephone: SITE.phone,
     image: [abs("/assets/images/fachada-1440.jpg"), abs("/assets/images/menu/calabresa-960.webp")],
@@ -342,7 +342,7 @@ function menuSchema() {
         else offers = [[null, item.preco]];
         return {
           "@type": "MenuItem",
-          name: cat.id === "bebidas" ? `${item.nome} ${item.desc}` : item.nome,
+          name: item.nome,
           description: item.desc,
           ...(item.foto ? { image: abs(`/assets/images/menu/${item.foto}-960.webp`) } : {}),
           offers: offers.map(([name, price]) => ({ "@type": "Offer", ...(name ? { name } : {}), price: price.toFixed(2), priceCurrency: "BRL" }))
@@ -617,7 +617,6 @@ ${marquee(pizzas.map((i) => i.nome))}
       <a class="cat" href="/cardapio/#doces" data-in>${photo("brigadeiro", "Pizza de brigadeiro com morango", "(max-width: 640px) 50vw, 50vw")}<span class="cat__body"><span><span class="cat__name">Pizzas doces</span><span class="cat__count" style="display:block">${doces.itens.length} sabores</span></span><span class="cat__arrow">${ICON.arrow}</span></span></a>
       <a class="cat" href="/cardapio/#massas" data-in>${photo("fettuccine", "Fettuccine gratinado", "(max-width: 640px) 50vw, 17vw")}<span class="cat__body"><span><span class="cat__name">Massas</span><span class="cat__count" style="display:block">P, M e G</span></span></span></a>
       <a class="cat" href="/cardapio/#porcoes" data-in>${photo("porcao-de-tilapia-com-fritas", "Filé de tilápia com fritas", "(max-width: 640px) 50vw, 17vw")}<span class="cat__body"><span><span class="cat__name">Pratos e porções</span><span class="cat__count" style="display:block">tilápia e fritas</span></span></span></a>
-      <a class="cat cat--plain" href="/cardapio/#bebidas" data-in><span class="cat__body"><span><span class="cat__name">Bebidas</span><span class="cat__count" style="display:block">sucos, refri e água</span></span></span></a>
     </div>
   </div>
 </section>
@@ -743,7 +742,7 @@ const first = salgadas.itens[0];
 pages.push({
   path: "/cardapio/",
   title: "Cardápio e preços · Casa da Pizza Caratinga",
-  description: `${totalSabores} sabores de pizza com preços de 25 cm e 35 cm, bordas recheadas, massas, porções e bebidas da Casa da Pizza, em ${SITE.city}, ${SITE.state}.`,
+  description: `${totalSabores} sabores de pizza com preços de 25 cm e 35 cm, bordas recheadas, massas e porções da Casa da Pizza, em ${SITE.city}, ${SITE.state}.`,
   trail: [HOME, { name: "Cardápio", path: "/cardapio/" }],
   schema: [menuSchema()],
   body: `
@@ -751,7 +750,7 @@ ${pageHead({
   trail: [HOME, { name: "Cardápio", path: "/cardapio/" }],
   kicker: "Cardápio completo",
   title: "Cardápio",
-  lead: `${totalSabores} sabores de pizza em 25 cm (4 pedaços) e 35 cm (8 pedaços), com até dois sabores por pizza. Também tem massas, porções e bebidas.`,
+  lead: `${totalSabores} sabores de pizza em 25 cm (4 pedaços) e 35 cm (8 pedaços), com até dois sabores por pizza. Também tem massas e porções.`,
   bg: photo("calabresa-premium", "", "100vw"),
   actions: orderLink("Fazer meu pedido")
 })}
@@ -1221,7 +1220,7 @@ const menuText = MENU.categorias.map((cat) => {
 
 write("llms.txt", `# Casa da Pizza · Caratinga, MG
 
-> Pizzaria no bairro ${SITE.district}, em ${SITE.city} (${SITE.state}), aberta desde 30 de outubro de 2020. Faz pizzas de 25 cm (4 pedaços) e 35 cm (8 pedaços) com até dois sabores, além de massas, porções e bebidas. Atende por delivery, retirada no balcão e no salão, ${HOURS_TEXT}. Nota ${SITE.rating} no Google, com ${SITE.reviews} avaliações.
+> Pizzaria no bairro ${SITE.district}, em ${SITE.city} (${SITE.state}), aberta desde 30 de outubro de 2020. Faz pizzas de 25 cm (4 pedaços) e 35 cm (8 pedaços) com até dois sabores, além de massas e porções. Atende por delivery, retirada no balcão e no salão, ${HOURS_TEXT}. Nota ${SITE.rating} no Google, com ${SITE.reviews} avaliações.
 
 ## Informações
 - Endereço: ${SITE.street}, ${SITE.district}, ${SITE.city} - ${SITE.state}, CEP ${SITE.cep}

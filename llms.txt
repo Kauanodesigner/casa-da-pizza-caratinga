@@ -1,6 +1,6 @@
 # Casa da Pizza · Caratinga, MG
 
-> Pizzaria no bairro Esplanada, em Caratinga (MG), aberta desde 30 de outubro de 2020. Faz pizzas de 25 cm (4 pedaços) e 35 cm (8 pedaços) com até dois sabores, além de massas, porções e bebidas. Atende por delivery, retirada no balcão e no salão, todos os dias, menos terça, das 18h às 23h30. Nota 5,0 no Google, com 28 avaliações.
+> Pizzaria no bairro Esplanada, em Caratinga (MG), aberta desde 30 de outubro de 2020. Faz pizzas de 25 cm (4 pedaços) e 35 cm (8 pedaços) com até dois sabores, além de massas e porções. Atende por delivery, retirada no balcão e no salão, todos os dias, menos terça, das 18h às 23h30. Nota 5,0 no Google, com 28 avaliações.
 
 ## Informações
 - Endereço: Rua Manoel Gonçalves de Castro, 164, Esplanada, Caratinga - MG, CEP 35300-321
@@ -101,22 +101,6 @@ P serve uma pessoa, M até duas, G até três.
 - Fritas (Batatas fritas.): R$ 29,99
 - Fritas com Queijo (Batatas fritas com queijo.): R$ 32,99
 - Fritas com Bacon e Cheddar (Batatas fritas com bacon e cheddar.): R$ 39,99
-
-### Bebidas
-- Água mineral sem gás (500 ml): R$ 4,99
-- Água mineral com gás (500 ml): R$ 5,50
-- Suco de abacaxi com hortelã (500 ml): R$ 12,99
-- Suco de morango (500 ml): R$ 13,99
-- Suco de maracujá (500 ml): R$ 13,99
-- Coca-Cola Original (Lata 350 ml): R$ 7,00
-- Coca-Cola Sem Açúcar (Lata 350 ml): R$ 7,00
-- Fanta Laranja (Lata 350 ml): R$ 7,00
-- Guaraná Antarctica (Lata 350 ml): R$ 7,00
-- Coca-Cola Original (Garrafa 1 L): R$ 13,99
-- Guaraná Antarctica (Garrafa 1 L): R$ 13,99
-- Coca-Cola Sem Açúcar (Garrafa 1,5 L): R$ 14,99
-- Guaraná Antarctica (Garrafa 2 L): R$ 15,99
-- Coca-Cola Original (Garrafa 2 L): R$ 16,99
 
 ### Borda recheada
 - Mista: 25 cm R$ 9,99 · 35 cm R$ 10,99
