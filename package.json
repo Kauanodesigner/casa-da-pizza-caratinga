@@ -1,0 +1,9 @@
+{
+  "name": "casa-da-pizza-caratinga",
+  "private": true,
+  "type": "module",
+  "description": "Site institucional da Casa da Pizza, Caratinga/MG",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

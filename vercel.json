@@ -1,0 +1,11 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/politica-de-privacidade.html", "destination": "/politica-de-privacidade/", "permanent": true },
+    { "source": "/acessibilidade.html", "destination": "/acessibilidade/", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}

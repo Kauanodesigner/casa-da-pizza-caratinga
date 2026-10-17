@@ -1,0 +1,621 @@
+{
+  "bordas": [
+    {
+      "nome": "Mista",
+      "p25": 9.99,
+      "p35": 10.99
+    },
+    {
+      "nome": "Catupiry",
+      "p25": 9.99,
+      "p35": 10.99
+    },
+    {
+      "nome": "Cheddar",
+      "p25": 9.99,
+      "p35": 10.99
+    },
+    {
+      "nome": "Chocolate",
+      "p25": 9.99,
+      "p35": 11.99
+    },
+    {
+      "nome": "Doce de leite",
+      "p25": 9.99,
+      "p35": 11.99
+    }
+  ],
+  "categorias": [
+    {
+      "id": "salgadas",
+      "nome": "Pizzas salgadas",
+      "nota": "Até dois sabores por pizza. No meio a meio, vale o preço do sabor mais caro.",
+      "tamanhos": true,
+      "itens": [
+        {
+          "nome": "Calabresa com Muçarela",
+          "desc": "Molho da casa, muçarela, calabresa, cebola e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "calabresa",
+          "destaque": true
+        },
+        {
+          "nome": "Frango com Catupiry",
+          "desc": "Molho da casa, muçarela, frango, catupiry, milho e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "frango-com-catupiry",
+          "destaque": true
+        },
+        {
+          "nome": "Franbacon",
+          "desc": "Molho da casa, muçarela, frango, bacon e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "franbacon",
+          "destaque": true
+        },
+        {
+          "nome": "Portuguesa",
+          "desc": "Molho da casa, muçarela, presunto, tomate, cebola, pimentão, bacon, ovos e orégano.",
+          "p25": 57.99,
+          "p35": 71.99,
+          "foto": "portuguesa",
+          "destaque": true
+        },
+        {
+          "nome": "Da Casa",
+          "desc": "Molho da casa, muçarela, presunto, calabresa, milho, palmito, ovo e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "da-casa",
+          "destaque": true
+        },
+        {
+          "nome": "Quatro Queijos",
+          "desc": "Molho da casa, muçarela, parmesão, provolone, catupiry e orégano.",
+          "p25": 57.99,
+          "p35": 73.99,
+          "foto": "quatro-queijos",
+          "destaque": true
+        },
+        {
+          "nome": "Marguerita",
+          "desc": "Molho da casa, muçarela, tomate fresco, orégano e manjericão.",
+          "p25": 49.99,
+          "p35": 64.99,
+          "foto": "marguerita"
+        },
+        {
+          "nome": "Bacon",
+          "desc": "Molho da casa, muçarela, bacon, milho, cebola e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "bacon"
+        },
+        {
+          "nome": "Frango com Cheddar",
+          "desc": "Molho da casa, muçarela, frango, cheddar, milho e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "frango-com-cheddar"
+        },
+        {
+          "nome": "Palmito",
+          "desc": "Molho da casa, muçarela e palmito.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "palmito"
+        },
+        {
+          "nome": "Alho Confitado",
+          "desc": "Molho da casa, muçarela, alho confitado em ervas finas e orégano.",
+          "p25": 54.99,
+          "p35": 64.99,
+          "foto": "alho-confitado"
+        },
+        {
+          "nome": "Napolitana",
+          "desc": "Molho da casa, muçarela, presunto, tomate e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "napolitana"
+        },
+        {
+          "nome": "Bacon com Cheddar",
+          "desc": "Molho da casa, muçarela, bacon, cheddar e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "bacon-com-cheddar"
+        },
+        {
+          "nome": "Mineirinha",
+          "desc": "Molho da casa, muçarela, frango desfiado, milho, tomate, ovo e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "mineirinha"
+        },
+        {
+          "nome": "Frango com Milho",
+          "desc": "Molho da casa, muçarela, frango e milho.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "frango-com-milho"
+        },
+        {
+          "nome": "Havaiana",
+          "desc": "Molho da casa, muçarela, lombo canadense e abacaxi em calda.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "havaiana"
+        },
+        {
+          "nome": "Paulista",
+          "desc": "Molho da casa, muçarela, bacon, milho, palmito e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "paulista"
+        },
+        {
+          "nome": "Lombinho",
+          "desc": "Molho da casa, muçarela, lombo canadense, catupiry e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "lombinho"
+        },
+        {
+          "nome": "Caipira",
+          "desc": "Molho da casa, muçarela, milho, palmito, frango, ovo, cebola e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "caipira"
+        },
+        {
+          "nome": "Bambina",
+          "desc": "Molho da casa, muçarela, calabresa, molho barbecue e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "bambina"
+        },
+        {
+          "nome": "Americana",
+          "desc": "Molho da casa, muçarela, presunto, ovo, palmito, azeitona e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "americana"
+        },
+        {
+          "nome": "Gênova",
+          "desc": "Molho da casa, muçarela, lombinho, bacon, cebola e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "genova"
+        },
+        {
+          "nome": "Três Queijos",
+          "desc": "Molho da casa, muçarela, provolone, parmesão e orégano.",
+          "p25": 57.99,
+          "p35": 73.99,
+          "foto": "quatro-queijos"
+        },
+        {
+          "nome": "Pepperoni",
+          "desc": "Molho da casa, muçarela, pepperoni, azeitonas e orégano.",
+          "p25": 59.99,
+          "p35": 73.99,
+          "foto": "pepperoni"
+        },
+        {
+          "nome": "Soberana",
+          "desc": "Massa artesanal, molho especial da casa, muçarela, calabresa, gorgonzola, cebola roxa e cream cheese.",
+          "p25": 57.99,
+          "p35": 71.99,
+          "foto": "soberana"
+        },
+        {
+          "nome": "Palmito Real",
+          "desc": "Molho da casa, muçarela, palmito real, tomate-cereja, orégano e salsinha.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "palmito-real"
+        },
+        {
+          "nome": "Pollo com Palmito",
+          "desc": "Molho da casa, muçarela, frango, catupiry e palmito.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "palmito"
+        },
+        {
+          "nome": "Vegetariana",
+          "desc": "Molho da casa, muçarela, cogumelo, tomate seco, milho, palmito, cebola, pimenta-biquinho, rúcula e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "vegetariana"
+        },
+        {
+          "nome": "Romanesca",
+          "desc": "Molho da casa, rúcula, muçarela, tomate-cereja, bacon em cubos e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "romanesca"
+        },
+        {
+          "nome": "Abobrinha Premium",
+          "desc": "Molho da casa, abobrinha temperada, bacon, pimenta-biquinho e orégano.",
+          "p25": 54.99,
+          "p35": 69.99,
+          "foto": "abobrinha"
+        },
+        {
+          "nome": "Do Chef",
+          "desc": "Molho da casa, muçarela, presunto, bacon, tomate, manjericão e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "do-chef"
+        },
+        {
+          "nome": "Especial",
+          "desc": "Molho da casa, muçarela, calabresa, milho, catupiry e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "especial"
+        },
+        {
+          "nome": "Camponês",
+          "desc": "Molho da casa, muçarela, frango, palmito e cogumelo.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "campones"
+        },
+        {
+          "nome": "Atum",
+          "desc": "Molho da casa, muçarela, atum, catupiry, ervilha fresca, tomate-cereja, cebola roxa e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "atum"
+        },
+        {
+          "nome": "Queijo Brie",
+          "desc": "Molho da casa, muçarela, provolone, queijo brie e geleia de pimenta.",
+          "p25": 59.99,
+          "p35": 75.99,
+          "foto": "queijo-brie"
+        },
+        {
+          "nome": "Peito de Peru",
+          "desc": "Molho da casa, muçarela, peito de peru defumado, alho-poró temperado, catupiry e orégano.",
+          "p25": 59.99,
+          "p35": 75.99,
+          "foto": "peito-de-peru"
+        },
+        {
+          "nome": "Tilápia",
+          "desc": "Muçarela, tilápia, tomate-cereja, cebola roxa, alcaparras, manjericão e orégano.",
+          "p25": 57.99,
+          "p35": 75.99,
+          "foto": "atum"
+        },
+        {
+          "nome": "Mexicana",
+          "desc": "Molho da casa, muçarela, cheddar, Doritos, cebolinha e pimenta-biquinho.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "mexicana"
+        },
+        {
+          "nome": "Strogonoff de Carne",
+          "desc": "Molho da casa, muçarela, filé mignon, strogonoff, cogumelo e batata palha.",
+          "p25": 59.99,
+          "p35": 76.99,
+          "foto": "strogonoff"
+        },
+        {
+          "nome": "Strogonoff de Frango",
+          "desc": "Molho da casa, muçarela, frango, strogonoff, cogumelo e batata palha.",
+          "p25": 57.99,
+          "p35": 75.99,
+          "foto": "strogonoff"
+        },
+        {
+          "nome": "Calabresa Premium",
+          "desc": "Molho da casa, muçarela, calabresa, bacon, tomate, cebola e orégano.",
+          "p25": 57.99,
+          "p35": 72.99,
+          "foto": "calabresa-premium"
+        },
+        {
+          "nome": "Siciliana",
+          "desc": "Molho da casa, muçarela, cogumelo, bacon e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "siciliana"
+        },
+        {
+          "nome": "Suprema",
+          "desc": "Molho da casa, muçarela, lombinho, cebola, tomate, catupiry e orégano.",
+          "p25": 57.99,
+          "p35": 70.99,
+          "foto": "suprema"
+        },
+        {
+          "nome": "Filé ao Molho BBQ",
+          "desc": "Molho da casa, filé mignon e molho barbecue.",
+          "p25": 59.99,
+          "p35": 76.99,
+          "foto": "file-ao-molho-bbq"
+        },
+        {
+          "nome": "Executiva",
+          "desc": "Molho da casa, muçarela, presunto, frango, bacon, cogumelo, catupiry e orégano.",
+          "p25": 57.99,
+          "p35": 72.99,
+          "foto": "executiva"
+        }
+      ]
+    },
+    {
+      "id": "doces",
+      "nome": "Pizzas doces",
+      "nota": "Também dá para fazer meio salgada, meio doce.",
+      "tamanhos": true,
+      "itens": [
+        {
+          "nome": "Romeu e Julieta",
+          "desc": "Queijo e goiabada.",
+          "p25": 59.99,
+          "p35": 69.99,
+          "foto": "romeu-e-julieta"
+        },
+        {
+          "nome": "Fondue de Morango",
+          "desc": "Chocolate e morango.",
+          "p25": 59.99,
+          "p35": 69.99,
+          "foto": "foundue-de-chocolate"
+        },
+        {
+          "nome": "Pavê de Abacaxi",
+          "desc": "Chocolate branco, catupiry, abacaxi em calda e coco ralado.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "pave-de-abacaxi"
+        },
+        {
+          "nome": "Brigadeiro",
+          "desc": "Brigadeiro, morango em pedaços e granulado.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "brigadeiro"
+        },
+        {
+          "nome": "Banana com Canela",
+          "desc": "Muçarela, banana, açúcar e canela.",
+          "p25": 55.99,
+          "p35": 69.99,
+          "foto": "banana-com-canela"
+        },
+        {
+          "nome": "Kit Kat",
+          "desc": "Brigadeiro e chocolate Kit Kat.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "kit-kat"
+        },
+        {
+          "nome": "Califórnia",
+          "desc": "Muçarela, abacaxi, figo, pêssego em calda e uvas-passas.",
+          "p25": 55.99,
+          "p35": 69.99,
+          "foto": "california"
+        },
+        {
+          "nome": "Kids",
+          "desc": "Brigadeiro e confete.",
+          "p25": 55.99,
+          "p35": 69.99,
+          "foto": "kids"
+        },
+        {
+          "nome": "Banana com Canela e Doce de Leite",
+          "desc": "Muçarela, banana, açúcar, canela e doce de leite.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "banana-com-doce-de-leite"
+        },
+        {
+          "nome": "Sensação",
+          "desc": "Chocolate branco com morango.",
+          "p25": 55.99,
+          "p35": 69.99,
+          "foto": "sensacao"
+        },
+        {
+          "nome": "Banana Nevada",
+          "desc": "Muçarela, banana, açúcar e chocolate branco.",
+          "p25": 57.99,
+          "p35": 69.99,
+          "foto": "banana-nevada"
+        }
+      ]
+    },
+    {
+      "id": "massas",
+      "nome": "Massas",
+      "nota": "P serve uma pessoa, M até duas, G até três.",
+      "itens": [
+        {
+          "nome": "Fettuccine",
+          "desc": "Gratinado. Peça com alcaparras, se quiser.",
+          "variantes": [
+            [
+              "P",
+              31.99
+            ],
+            [
+              "M",
+              41.99
+            ],
+            [
+              "G",
+              57.99
+            ]
+          ],
+          "foto": "fettuccine"
+        },
+        {
+          "nome": "Espaguete à Bolonhesa",
+          "desc": "Espaguete com molho à bolonhesa.",
+          "variantes": [
+            [
+              "P",
+              29.99
+            ],
+            [
+              "M",
+              34.99
+            ],
+            [
+              "G",
+              39.99
+            ]
+          ],
+          "foto": "espaguete"
+        },
+        {
+          "nome": "Espaguete ao Alho e Óleo",
+          "desc": "Espaguete ao alho e óleo com bacon.",
+          "variantes": [
+            [
+              "P",
+              28.99
+            ],
+            [
+              "M",
+              32.99
+            ],
+            [
+              "G",
+              35.99
+            ]
+          ],
+          "foto": "macarrao-alho-e-oleo"
+        }
+      ]
+    },
+    {
+      "id": "porcoes",
+      "nome": "Pratos e porções",
+      "itens": [
+        {
+          "nome": "Filé de Tilápia com Molho Tártaro",
+          "desc": "Filé de tilápia com molho tártaro.",
+          "preco": 54.99,
+          "foto": "file-de-tilapia"
+        },
+        {
+          "nome": "Filé de Tilápia com Fritas",
+          "desc": "Filé de tilápia acompanhado de batatas fritas.",
+          "preco": 62.99,
+          "foto": "porcao-de-tilapia-com-fritas"
+        },
+        {
+          "nome": "Fritas",
+          "desc": "Batatas fritas.",
+          "preco": 29.99,
+          "foto": "fritas"
+        },
+        {
+          "nome": "Fritas com Queijo",
+          "desc": "Batatas fritas com queijo.",
+          "preco": 32.99,
+          "foto": "fritas-com-queijo"
+        },
+        {
+          "nome": "Fritas com Bacon e Cheddar",
+          "desc": "Batatas fritas com bacon e cheddar.",
+          "preco": 39.99,
+          "foto": "fritas-com-bacon-e-cheddar"
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nome": "Bebidas",
+      "itens": [
+        {
+          "nome": "Água mineral sem gás",
+          "desc": "500 ml",
+          "preco": 4.99
+        },
+        {
+          "nome": "Água mineral com gás",
+          "desc": "500 ml",
+          "preco": 5.5
+        },
+        {
+          "nome": "Suco de abacaxi com hortelã",
+          "desc": "500 ml",
+          "preco": 12.99
+        },
+        {
+          "nome": "Suco de morango",
+          "desc": "500 ml",
+          "preco": 13.99
+        },
+        {
+          "nome": "Suco de maracujá",
+          "desc": "500 ml",
+          "preco": 13.99
+        },
+        {
+          "nome": "Coca-Cola Original",
+          "desc": "Lata 350 ml",
+          "preco": 7
+        },
+        {
+          "nome": "Coca-Cola Sem Açúcar",
+          "desc": "Lata 350 ml",
+          "preco": 7
+        },
+        {
+          "nome": "Fanta Laranja",
+          "desc": "Lata 350 ml",
+          "preco": 7
+        },
+        {
+          "nome": "Guaraná Antarctica",
+          "desc": "Lata 350 ml",
+          "preco": 7
+        },
+        {
+          "nome": "Coca-Cola Original",
+          "desc": "Garrafa 1 L",
+          "preco": 13.99
+        },
+        {
+          "nome": "Guaraná Antarctica",
+          "desc": "Garrafa 1 L",
+          "preco": 13.99
+        },
+        {
+          "nome": "Coca-Cola Sem Açúcar",
+          "desc": "Garrafa 1,5 L",
+          "preco": 14.99
+        },
+        {
+          "nome": "Guaraná Antarctica",
+          "desc": "Garrafa 2 L",
+          "preco": 15.99
+        },
+        {
+          "nome": "Coca-Cola Original",
+          "desc": "Garrafa 2 L",
+          "preco": 16.99
+        }
+      ]
+    }
+  ]
+}
