@@ -42,7 +42,7 @@ const SITE = {
   rating: "5,0",
   reviews: 28,
   updated: "outubro de 2026",
-  owners: ["Leandra", "Alana"]
+  owners: ["Leandra", "Alan"]
 };
 
 // Bairros de Caratinga (zona urbana). Entregamos na cidade toda.
@@ -259,7 +259,7 @@ const FAQ = [
     { q: "Vocês fazem pizza para evento fora do horário?", a: `<p>Pode ser. Chame a gente no <a href="${WA_ORDER}"${NEW_TAB}>WhatsApp</a> contando a data e o horário do evento, e a gente vê a disponibilidade.</p>` }
   ]},
   { group: "Horário e endereço", items: [
-    { q: "Quem são as donas da Casa da Pizza?", a: "<p>Leandra e Alana. A Casa começou no quintal de casa, vendendo duas pizzas por R$ 50, e abriu como empresa em outubro de 2020, no bairro Esplanada.</p>" },
+    { q: "Quem são os donos da Casa da Pizza?", a: "<p>Leandra e Alan. A Casa começou no quintal de casa, vendendo duas pizzas por R$ 50, e abriu como empresa em outubro de 2020, no bairro Esplanada.</p>" },
     { home: true, q: "Qual é o horário de funcionamento?", a: `<p>Abrimos ${HOURS_TEXT}. Terça é o dia de folga da equipe.</p>` },
     { q: "A Casa da Pizza abre na terça-feira?", a: "<p>Não. Terça é o dia de folga. Abrimos de quarta a segunda, das 18h às 23h30.</p>" },
     { q: "Onde fica a Casa da Pizza?", a: `<p>Na ${SITE.street}, bairro ${SITE.district}, em ${SITE.city}, ${SITE.state}. <a href="${MAPS_LINK}"${NEW_TAB}>Abrir no mapa</a>.</p>` },
@@ -565,7 +565,7 @@ ${marquee(pizzas.map((i) => i.nome))}
       <p class="kicker" id="casa-title">A Casa</p>
       <p class="intro__text">A gente começou no quintal de casa, vendendo duas pizzas por R$ 50. Hoje a Casa da Pizza fica no bairro ${SITE.district}, em ${SITE.city}, e faz ${totalSabores} sabores de pizza, além de massas e porções.</p>
       <p class="intro__text" style="margin-top:20px">Dá pra pedir pra entregar, buscar no balcão ou comer aqui no salão. Só não abrimos na terça, que é a folga da equipe.</p>
-      <p class="intro__sign">Leandra e Alana</p>
+      <p class="intro__sign">Leandra e Alan</p>
     </div>
     <div class="mosaic">
       <figure class="reveal-img">${photo("pepperoni", "Pizza de pepperoni com azeitonas", "(max-width: 1023px) 55vw, 28vw")}</figure>
@@ -678,8 +678,8 @@ ${marquee(pizzas.map((i) => i.nome))}
   <div class="split__photo reveal-img">${donos()}</div>
   <div class="split__text">
     <p class="kicker">Quem faz</p>
-    <h2 class="title" id="quem-title">Leandra e Alana</h2>
-    <p class="lead">As donas da Casa. Tudo começou no quintal de casa, vendendo duas pizzas por R$ 50. Em 2020 a pizzaria abriu no ${SITE.district}, e a pizza continua saindo do jeito que a gente serviria pra família.</p>
+    <h2 class="title" id="quem-title">Leandra e Alan</h2>
+    <p class="lead">Os donos da Casa. Tudo começou no quintal de casa, vendendo duas pizzas por R$ 50. Em 2020 a pizzaria abriu no ${SITE.district}, e a pizza continua saindo do jeito que a gente serviria pra família.</p>
     <div class="actions" data-in><a class="btn btn--line-dark" href="/sobre/">Nossa história ${ICON.arrow}</a></div>
   </div>
 </section>
@@ -972,7 +972,7 @@ ${ctaBlock("Bateu a fome? Peça a sua.", "frango-com-cheddar")}`
 pages.push({
   path: "/sobre/",
   title: "Sobre a Casa da Pizza · Pizzaria em Caratinga desde 2020",
-  description: `A Casa da Pizza é de Leandra e Alana: começou no quintal de casa, vendendo duas pizzas por R$ 50, e abriu em outubro de 2020 no bairro ${SITE.district}, em ${SITE.city}.`,
+  description: `A Casa da Pizza é de Leandra e Alan: começou no quintal de casa, vendendo duas pizzas por R$ 50, e abriu em outubro de 2020 no bairro ${SITE.district}, em ${SITE.city}.`,
   trail: [HOME, { name: "Sobre", path: "/sobre/" }],
   type: "AboutPage",
   body: `
@@ -980,7 +980,7 @@ ${pageHead({
   trail: [HOME, { name: "Sobre", path: "/sobre/" }],
   kicker: "Nossa história",
   title: "Nossa história",
-  lead: `De Leandra e Alana: do quintal de casa para o bairro ${SITE.district}, em ${SITE.city}.`,
+  lead: `De Leandra e Alan: do quintal de casa para o bairro ${SITE.district}, em ${SITE.city}.`,
   bg: photo("do-chef", "", "100vw")
 })}
 
@@ -989,7 +989,7 @@ ${pageHead({
   <div class="split__text">
     <p class="kicker">Desde 2020</p>
     <h2 class="title" id="historia-title">Começou no quintal de casa</h2>
-    <p class="lead" data-in>A Casa da Pizza é de Leandra e Alana. Tudo começou no quintal de casa, vendendo duas pizzas por R$ 50.</p>
+    <p class="lead" data-in>A Casa da Pizza é de Leandra e Alan. Tudo começou no quintal de casa, vendendo duas pizzas por R$ 50.</p>
     <p class="lead" data-in style="margin-top:16px">Em 30 de outubro de 2020, a Casa virou empresa, no bairro ${SITE.district}. O nome e o lema vêm dessa origem: servir a pizza do jeito que a gente serviria em casa.</p>
     <p class="lead" data-in style="margin-top:16px">Hoje, além da entrega e da retirada, a Casa também recebe você no salão.</p>
   </div>
@@ -999,7 +999,7 @@ ${pageHead({
   <div class="wrap">
     <h2 class="title" id="linha-title">Do quintal ao salão</h2>
     <ol class="timeline">
-      <li data-in><span class="timeline__when">No começo</span><h3>O quintal</h3><p>Leandra e Alana vendiam duas pizzas por R$ 50, feitas no quintal de casa.</p></li>
+      <li data-in><span class="timeline__when">No começo</span><h3>O quintal</h3><p>Leandra e Alan vendiam duas pizzas por R$ 50, feitas no quintal de casa.</p></li>
       <li data-in><span class="timeline__when">Outubro de 2020</span><h3>Nasce a Casa</h3><p>A Casa da Pizza abre como empresa no bairro ${SITE.district}, em ${SITE.city}.</p></li>
       <li data-in><span class="timeline__when">Hoje</span><h3>${totalSabores} sabores e salão</h3><p>Delivery, retirada e salão, nota ${SITE.rating} no Google e ${SITE.instagramFollowers} seguidores no Instagram.</p></li>
     </ol>
@@ -1232,7 +1232,7 @@ write("llms.txt", `# Casa da Pizza · Caratinga, MG
 - Pagamento: Pix, cartão ou dinheiro
 - Salão: aceita reservas e comemorações de aniversário (combinar pelo WhatsApp)
 - Meio a meio: até dois sabores, inclusive salgado e doce; vale o preço do sabor mais caro
-- Donas: Leandra e Alana. A Casa começou no quintal de casa, vendendo duas pizzas por R$ 50
+- Donos: Leandra e Alan. A Casa começou no quintal de casa, vendendo duas pizzas por R$ 50
 - Área de entrega: todos os bairros de ${SITE.city}, entre eles ${BAIRROS.join(", ")}
 - Instagram: ${SITE.instagram}
 - Razão social: ${SITE.legalName} · CNPJ ${SITE.cnpj}
