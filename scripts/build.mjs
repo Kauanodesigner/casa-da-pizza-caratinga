@@ -6,8 +6,8 @@
    e dos textos abaixo. O cardápio sai escrito no HTML (e não montado por
    JavaScript) para que Google e robôs de IA consigam ler sabores e preços.
 
-   Domínio: casadapizzacaratinga.com.br, hospedado na Hostinger com deploy
-   pelo Git (os HTML gerados vão no commit). Para outro endereço, rode com
+   Domínio: casadapizzacaratinga.com.br, hospedado na Hostinger. O GitHub
+   Actions envia por FTP a cada push (os HTML gerados vão no commit). Para outro endereço, rode com
    SITE_URL=...
    =================================================================== */
 

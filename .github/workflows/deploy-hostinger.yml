@@ -1,0 +1,39 @@
+# Publica o site na Hostinger a cada push no master.
+# Os HTML já vão gerados no commit (npm run build), então aqui só envia os
+# arquivos por FTP. Só sobe o que mudou desde o último deploy.
+# Precisa do secret FTP_PASSWORD (senha FTP do hPanel > Arquivos > Contas FTP).
+
+name: Deploy Hostinger
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 147.93.37.123
+          username: u835566546
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: domains/casadapizzacaratinga.com.br/public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            scripts/**
+            data/**
+            **/*.md
+            package.json
+            vercel.json
+            .vercelignore
