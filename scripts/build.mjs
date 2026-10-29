@@ -6,8 +6,9 @@
    e dos textos abaixo. O cardápio sai escrito no HTML (e não montado por
    JavaScript) para que Google e robôs de IA consigam ler sabores e preços.
 
-   Domínio: por enquanto o endereço da Vercel. Com domínio próprio, troque
-   SITE.url (ou rode com SITE_URL=...).
+   Domínio: casadapizzacaratinga.com.br, hospedado na Hostinger com deploy
+   pelo Git (os HTML gerados vão no commit). Para outro endereço, rode com
+   SITE_URL=...
    =================================================================== */
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -20,7 +21,7 @@ const MENU = JSON.parse(readFileSync(join(ROOT, "data/cardapio.json"), "utf8"));
 /* ============================ DADOS DA CASA ======================== */
 
 const SITE = {
-  url: (process.env.SITE_URL || "https://casa-da-pizza-caratinga.vercel.app").replace(/\/$/, ""),
+  url: (process.env.SITE_URL || "https://casadapizzacaratinga.com.br").replace(/\/$/, ""),
   name: "Casa da Pizza",
   legalName: "Casa da Pizza Delivery Caratinga LTDA",
   cnpj: "39.630.718/0001-05",
@@ -1254,4 +1255,3 @@ ${MENU.bordas.map((b) => `- ${b.nome}: 25 cm R$ ${money(b.p25)} · 35 cm R$ ${mo
 `);
 
 console.log(`Gerado: ${pages.length} páginas, sitemap.xml, robots.txt, llms.txt (domínio: ${SITE.url})`);
-if (SITE.url.includes("vercel.app")) console.warn("Usando o endereço da Vercel. Quando tiver domínio próprio, troque SITE.url.");

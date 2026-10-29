@@ -17,13 +17,13 @@
 - Razão social: Casa da Pizza Delivery Caratinga LTDA · CNPJ 39.630.718/0001-05
 
 ## Páginas
-- [Início](https://casa-da-pizza-caratinga.vercel.app/)
-- [Cardápio e preços](https://casa-da-pizza-caratinga.vercel.app/cardapio/): todos os sabores com preços
-- [Salão, reservas e aniversários](https://casa-da-pizza-caratinga.vercel.app/salao/)
-- [Delivery e retirada](https://casa-da-pizza-caratinga.vercel.app/delivery/)
-- [Sobre](https://casa-da-pizza-caratinga.vercel.app/sobre/)
-- [Perguntas frequentes](https://casa-da-pizza-caratinga.vercel.app/perguntas-frequentes/)
-- [Contato](https://casa-da-pizza-caratinga.vercel.app/contato/)
+- [Início](https://casadapizzacaratinga.com.br/)
+- [Cardápio e preços](https://casadapizzacaratinga.com.br/cardapio/): todos os sabores com preços
+- [Salão, reservas e aniversários](https://casadapizzacaratinga.com.br/salao/)
+- [Delivery e retirada](https://casadapizzacaratinga.com.br/delivery/)
+- [Sobre](https://casadapizzacaratinga.com.br/sobre/)
+- [Perguntas frequentes](https://casadapizzacaratinga.com.br/perguntas-frequentes/)
+- [Contato](https://casadapizzacaratinga.com.br/contato/)
 
 ## Cardápio (preços conferidos em outubro de 2026)
 

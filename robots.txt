@@ -41,4 +41,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://casa-da-pizza-caratinga.vercel.app/sitemap.xml
+Sitemap: https://casadapizzacaratinga.com.br/sitemap.xml
