@@ -572,6 +572,8 @@ em { font-style: italic; font-variation-settings: "opsz" 144; }
 .split--rev .split__photo { order: 2; }
 .split__photo { position: relative; min-height: 460px; overflow: hidden; }
 .split__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* foto horizontal: mantém a proporção para não cortar ninguém */
+.split__photo.split__photo--inteira { align-self: center; min-height: 0; aspect-ratio: 1280 / 854; }
 .split__text { align-self: center; padding: var(--pad) clamp(28px, 5vw, 80px); }
 .split__text .title { margin-top: 22px; font-size: clamp(2.3rem, 4.2vw, 3.75rem); }
 .split__text .lead { margin-top: 24px; }

@@ -11,12 +11,15 @@
    SITE_URL=...
    =================================================================== */
 
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MENU = JSON.parse(readFileSync(join(ROOT, "data/cardapio.json"), "utf8"));
+/* /assets/ tem cache de um ano: o hash troca a URL quando o CSS muda */
+const CSS_VERSION = createHash("sha256").update(readFileSync(join(ROOT, "assets/css/site.css"))).digest("hex").slice(0, 8);
 
 /* ============================ DADOS DA CASA ======================== */
 
@@ -119,7 +122,7 @@ function fachada(alt, sizes = "(max-width: 1023px) 100vw, 60vw", extra = "") {
 const FACHADA_ALT = "Fachada da Casa da Pizza à noite, com o letreiro aceso e o salão iluminado, com mesas e jardim vertical ao fundo.";
 
 function donos(extra = "") {
-  return `<img src="/assets/images/foto-donos-900.jpg" srcset="/assets/images/foto-donos-500.jpg 500w, /assets/images/foto-donos-900.jpg 900w" sizes="(max-width: 1023px) 100vw, 45vw" width="900" height="1125" loading="lazy" decoding="async" alt="A família por trás da Casa da Pizza."${extra}>`;
+  return `<img src="/assets/images/familia-1280.jpg" srcset="/assets/images/familia-640.jpg 640w, /assets/images/familia-1280.jpg 1280w" sizes="(max-width: 1023px) 100vw, 56vw" width="1280" height="854" loading="lazy" decoding="async" alt="A família por trás da Casa da Pizza."${extra}>`;
 }
 
 /* ---------------------------- componentes ---------------------------- */
@@ -503,7 +506,7 @@ function layout(page) {
 <link rel="preload" href="/assets/fonts/barlow-condensed-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 ${page.preload || ""}
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v=${CSS_VERSION}">
 <script>document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">${graph(page)}</script>
 </head>
@@ -675,7 +678,7 @@ ${marquee(pizzas.map((i) => i.nome))}
 </section>
 
 <section class="split split--rev split--cream on-cream" aria-labelledby="quem-title">
-  <div class="split__photo reveal-img">${donos()}</div>
+  <div class="split__photo split__photo--inteira reveal-img">${donos()}</div>
   <div class="split__text">
     <p class="kicker">Quem faz</p>
     <h2 class="title" id="quem-title">Leandra e Alan</h2>
@@ -985,7 +988,7 @@ ${pageHead({
 })}
 
 <section class="split split--cream on-cream" aria-labelledby="historia-title">
-  <div class="split__photo reveal-img">${donos()}</div>
+  <div class="split__photo split__photo--inteira reveal-img">${donos()}</div>
   <div class="split__text">
     <p class="kicker">Desde 2020</p>
     <h2 class="title" id="historia-title">Começou no quintal de casa</h2>
