@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Casa da Pizza">
-  <rect width="64" height="64" rx="14" fill="#0B0B0B"/>
-  <path d="M32 11 L52.5 49.5 Q32 58.5 11.5 49.5 Z" fill="#D21C08"/>
-  <path d="M11.5 49.5 Q32 58.5 52.5 49.5 Q32 62.5 11.5 49.5 Z" fill="#F5F1E8"/>
-  <circle cx="25" cy="35" r="3.4" fill="#F5F1E8"/>
-  <circle cx="38.5" cy="38" r="3.1" fill="#F5F1E8"/>
-  <circle cx="32" cy="25" r="2.6" fill="#F5F1E8"/>
-  <path d="M32 42.5c-2.6-.4-4.3-2.3-4.1-4.6 2.7.1 4.4 2 4.1 4.6z" fill="#2B9B3A"/>
-</svg>

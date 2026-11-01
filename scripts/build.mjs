@@ -18,8 +18,9 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MENU = JSON.parse(readFileSync(join(ROOT, "data/cardapio.json"), "utf8"));
-/* /assets/ tem cache de um ano: o hash troca a URL quando o CSS muda */
+/* /assets/ tem cache de um ano: o hash troca a URL quando o arquivo muda */
 const CSS_VERSION = createHash("sha256").update(readFileSync(join(ROOT, "assets/css/site.css"))).digest("hex").slice(0, 8);
+const ICON_VERSION = createHash("sha256").update(readFileSync(join(ROOT, "assets/icons/apple-touch-icon.png"))).digest("hex").slice(0, 8);
 
 /* ============================ DADOS DA CASA ======================== */
 
@@ -500,8 +501,10 @@ function layout(page) {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="geo.region" content="BR-MG">
 <meta name="geo.placename" content="${SITE.city}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png?v=${ICON_VERSION}">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/barlow-condensed-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
