@@ -42,7 +42,7 @@ const SITE = {
   instagram: "https://www.instagram.com/casadapizzactga/",
   instagramHandle: "@casadapizzactga",
   instagramFollowers: "7,2 mil",
-  order: "https://pedir.delivery/app/casadapizza-mg/menu",
+  order: "https://app.cardapioweb.com/casa_da_pizza_delivery_",
   gtm: "GTM-WSJQQG3J",
   google: "https://share.google/fEjlEVdemwa1Arjca",
   rating: "5,0",
@@ -1144,7 +1144,7 @@ legal("/politica-de-privacidade/", "Política de privacidade", "Como o site da C
 <li><strong>Google Maps</strong>: o mapa só é carregado se você clicar em "Carregar o mapa" ou "Como chegar".</li>
 <li><strong>Google Analytics e Google Tag Manager</strong> (Google): medição de visitas e cliques, como descrito acima.</li>
 <li><strong>Pixel da Meta</strong> (Meta, dona do Facebook e do Instagram): medição dos resultados dos anúncios e criação de públicos para anúncios.</li>
-<li><strong>pedir.delivery</strong>: plataforma do cardápio online, aberta quando você clica em um botão de pedido.</li>
+<li><strong>Cardápio Web</strong>: plataforma do cardápio online, aberta quando você clica em um botão de pedido. Ela também usa o Google Analytics e o Pixel da Meta para medir pedidos.</li>
 <li><strong>WhatsApp</strong> e <strong>Instagram</strong>: abertos somente quando você clica nos links.</li>
 </ul>
 <h2>Dados do pedido</h2>
@@ -1170,7 +1170,7 @@ legal("/acessibilidade/", "Acessibilidade", "O que o site da Casa da Pizza faz p
 <li>Status do forno indicado por texto, e não apenas pela cor.</li>
 </ul>
 <h2>O que depende de terceiros</h2>
-<p>O pedido, o pagamento e o acompanhamento acontecem na plataforma <a href="${SITE.order}"${NEW_TAB}>pedir.delivery</a>, que não é controlada pela Casa da Pizza.</p>
+<p>O pedido, o pagamento e o acompanhamento acontecem na plataforma <a href="${SITE.order}"${NEW_TAB}>Cardápio Web</a>, que não é controlada pela Casa da Pizza.</p>
 <h2>Encontrou uma barreira?</h2>
 <p>Avise pelo WhatsApp <a href="${WA_ORDER}"${NEW_TAB}>${SITE.phoneDisplay}</a>, contando o que aconteceu e qual aparelho você usava. Se preferir, ligue para o mesmo número e faça o pedido falando com a gente.</p>
 <h2>Referência</h2>
