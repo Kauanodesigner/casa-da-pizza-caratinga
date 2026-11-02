@@ -43,6 +43,7 @@ const SITE = {
   instagramHandle: "@casadapizzactga",
   instagramFollowers: "7,2 mil",
   order: "https://pedir.delivery/app/casadapizza-mg/menu",
+  gtm: "GTM-WSJQQG3J",
   google: "https://share.google/fEjlEVdemwa1Arjca",
   rating: "5,0",
   reviews: 28,
@@ -482,6 +483,13 @@ function layout(page) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${SITE.gtm}');</script>
+<!-- End Google Tag Manager -->
 <title>${esc(page.title)}</title>
 <meta name="description" content="${esc(page.description)}">
 <link rel="canonical" href="${abs(page.path)}">
@@ -514,6 +522,7 @@ ${page.preload || ""}
 <script type="application/ld+json">${graph(page)}</script>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${SITE.gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 ${header(page.path)}
 <main id="conteudo">
@@ -1114,7 +1123,7 @@ function legal(path, name, lead, html) {
   <div class="wrap--narrow">
     ${crumbs([HOME, { name, path }])}
     <h1 class="title" style="margin-top:36px">${esc(name)}</h1>
-    <p class="lead" style="margin-top:20px">Última atualização: ${SITE.updated}.</p>
+    <p class="lead" style="margin-top:20px">Última atualização: novembro de 2026.</p>
   </div>
 </header>
 <section class="block block--sm"><div class="wrap--narrow prose">${html}</div></section>`
@@ -1127,11 +1136,14 @@ legal("/politica-de-privacidade/", "Política de privacidade", "Como o site da C
 <p>O site não tem formulário, cadastro, carrinho nem pagamento. Por isso, não pede nem guarda:</p>
 <ul><li>nome, telefone ou e-mail;</li><li>endereço de entrega;</li><li>dados de cartão ou qualquer informação de pagamento;</li><li>senha ou conta de usuário.</li></ul>
 <h2>Cookies e rastreamento</h2>
-<p>O site não instala cookies próprios e não usa ferramentas de rastreamento publicitário. Se no futuro passarmos a usar alguma ferramenta de medição de visitas, esta página será atualizada antes.</p>
+<p>O site usa o Google Analytics e o Pixel da Meta, carregados pelo Google Tag Manager, para contar visitas e medir cliques nos botões de pedido e de WhatsApp. Essas ferramentas usam cookies e recebem dados como as páginas visitadas, o botão clicado, o endereço de IP e informações do aparelho e do navegador. Com isso a Casa da Pizza entende quais páginas funcionam melhor e mede os resultados dos anúncios no Facebook e no Instagram. O site continua sem coletar nome, telefone ou e-mail.</p>
+<p>Você pode bloquear ou apagar esses cookies nas configurações do seu navegador. As escolhas de anúncios da Meta podem ser ajustadas nas configurações da sua conta do Facebook ou do Instagram.</p>
 <h2>Serviços de terceiros</h2>
 <p>As fontes e as imagens do site são servidas pelo próprio site. Algumas partes dependem de serviços externos. Quando o navegador busca esses recursos, o endereço de IP e informações básicas do aparelho chegam a essas empresas, que têm políticas próprias:</p>
 <ul>
 <li><strong>Google Maps</strong>: o mapa só é carregado se você clicar em "Carregar o mapa" ou "Como chegar".</li>
+<li><strong>Google Analytics e Google Tag Manager</strong> (Google): medição de visitas e cliques, como descrito acima.</li>
+<li><strong>Pixel da Meta</strong> (Meta, dona do Facebook e do Instagram): medição dos resultados dos anúncios e criação de públicos para anúncios.</li>
 <li><strong>pedir.delivery</strong>: plataforma do cardápio online, aberta quando você clica em um botão de pedido.</li>
 <li><strong>WhatsApp</strong> e <strong>Instagram</strong>: abertos somente quando você clica nos links.</li>
 </ul>
