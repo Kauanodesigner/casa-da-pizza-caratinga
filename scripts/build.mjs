@@ -509,6 +509,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image">
 <meta name="geo.region" content="BR-MG">
 <meta name="geo.placename" content="${SITE.city}">
+<meta name="msvalidate.01" content="7A7CFB27CD19B283FE8989C43E52495D">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
